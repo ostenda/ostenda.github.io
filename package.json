@@ -11,6 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "@ar-js-org/ar.js": "^3.4.4",
+    "aframe": "^1.4.1",
+    "aframe-look-at-component": "^1.0.0",
+    "aframe-osm-3d": "^0.5.2",
     "three": "^0.150.1"
   },
   "devDependencies": {
