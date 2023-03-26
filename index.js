@@ -20,7 +20,7 @@ function main() {
 
     // Handle the "gpsupdate" event on the LocationBased object
     // This triggers when a GPS update (from the Geolocation API) occurs
-    // 'pos' is the position object from the Geolocation API.
+    // 'pos' is the position object from the Geolocation APItest.
 
     arjs.on("gpsupdate", async(pos) => {
         if(!fetched) {
