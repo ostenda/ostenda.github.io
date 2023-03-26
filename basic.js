@@ -1,3 +1,5 @@
+import '@ar-js-org/ar.js';
+
 window.onload = () => {
     let testEntityAdded = false;
 
