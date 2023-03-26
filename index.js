@@ -1,3 +1,6 @@
+import * as THREE from 'three';
+import * as THREEx from './node_modules/@ar-js-org/ar.js/three.js/build/ar-threex-location-only.js';
+
 const canvas = document.getElementById('canvas1');
 
 const scene = new THREE.Scene();
