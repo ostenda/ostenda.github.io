@@ -22,24 +22,15 @@ AFRAME.registerComponent("poi-downloader", {
                         y: 20,
                         z: 20
                     });
-                    box.setAttribute('material', { color: 'red' } );
+                    box.setAttribute('material', { color: 'green' } );
                     box.setAttribute("position", { 
                         x : 0,
                         y : 20,
                         z: 0 
                     } );
-                    const text = document.createElement("a-text");
-                    const textScale = 100;
-                    text.setAttribute("look-at", "[gps-new-camera]");
-                    text.setAttribute("scale", {
-                        x: textScale,
-                        y: textScale,
-                        z: textScale 
-                    });
-                    text.setAttribute("value", feature.properties.name);
-                    text.setAttribute("align", "center");
+                    
                     compoundEntity.appendChild(box);
-                    compoundEntity.appendChild(text);
+                    
                     document.querySelector("a-scene").appendChild(compoundEntity);
                 });
             }
