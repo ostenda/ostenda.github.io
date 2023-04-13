@@ -14,7 +14,12 @@
     "aframe": "^1.4.1",
     "aframe-look-at-component": "^1.0.0",
     "aframe-osm-3d": "^0.5.2",
-    "three": "^0.150.1"
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "geojson": "^0.5.0",
+    "pg": "^8.10.0",
+    "three": "^0.150.1",
+    "wkt": "^0.1.1"
   },
   "devDependencies": {
     "webpack": "^5.76.3",
