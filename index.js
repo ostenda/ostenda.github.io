@@ -1,3 +1,5 @@
+import mapRouter from './routes/server';
+
 window.onload = () => {
     let downloaded = false;
 
@@ -9,7 +11,7 @@ window.onload = () => {
                   east = e.detail.position.longitude + 0.05,
                   south = e.detail.position.latitude - 0.05;
                   north = e.detail.position.latitude + 0.05;
-            const response = await fetch(`https://hikar.org/webapp/map?bbox=${west},${south},${east},${north}&layers=poi&outProj=4326`);
+            const response = await fetch(`/map?bbox=${west},${south},${east},${north}`);
             const pois = await response.json();
             pois.features.forEach ( feature => {
                 const compoundEntity = document.createElement("a-entity");
