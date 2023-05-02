@@ -1,6 +1,6 @@
 const express = require("express");
-const locationRoutes = require("../model/routes")
-const client = require("../db")
+const locationRoutes = require("./model/routes")
+const client = require("./db")
 const app = express();
 const port = 3000;
 
